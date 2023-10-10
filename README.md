@@ -19,3 +19,10 @@ To run this application, you will need to have Streamlit and Plotly Express inst
 
 pip install streamlit
 pip install plotly_express
+
+
+
+
+
+
+To access app, go to this link: https://web-app-project.onrender.com/
