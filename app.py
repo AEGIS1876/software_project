@@ -5,6 +5,13 @@ import plotly.express as px
 
 df = pd.read_csv('vehicles_us.csv')
 
+df['is_4wd'].fillna(0, inplace=True)
+df['model_year'].fillna(df['model_year'].median(), inplace=True)
+df['cylinders'].fillna(df['cylinders'].median(), inplace=True)
+df['odometer'].fillna(df['odometer'].median(), inplace=True)
+df['paint_color'].fillna('Unknown', inplace=True)
+
+
 st.header('Vehicle Sales Advertisements')
 
 
